@@ -1,5 +1,0 @@
-[phases.setup]
-aptPkgs = ["ffmpeg"]
-
-[start]
-cmd = "python run_pipeline.py"
