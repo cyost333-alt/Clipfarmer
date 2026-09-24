@@ -1,8 +1,0 @@
-{
-  "packages": {
-    "apt": ["ffmpeg"]
-  },
-  "deploy": {
-    "startCommand": "python run_pipeline.py"
-  }
-}
