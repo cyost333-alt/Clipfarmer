@@ -13,7 +13,7 @@ _model = None
 def _get_model() -> WhisperModel:
     global _model
     if _model is None:
-        _model = WhisperModel("base", compute_type="int8")
+        _model = WhisperModel("tiny", compute_type="int8")
     return _model
 
 
