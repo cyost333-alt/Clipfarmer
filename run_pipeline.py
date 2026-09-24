@@ -60,8 +60,7 @@ def main() -> None:
         title = clip["title"]
         safe_name = "".join(ch if ch.isalnum() or ch in " -_" else "" for ch in title)[:60].strip()
         raw_path = RAW_DIR / f"{clip_id}.mp4"
-        output_path = OUTPUT_DIR / f"{safe_name or clip_id}.mp4"
-
+        output_path = OUTPUT_DIR / f"{clip_id}.mp4"
         try:
             print(f"  Downloading: {title}")
             download_clip(clip["url"], str(raw_path))
